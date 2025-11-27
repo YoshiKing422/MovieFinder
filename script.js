@@ -1,4 +1,4 @@
-const API_KEY = "2f28b4ce"; // <-- put your OMDb key here
+const API_KEY = "..."; // <-- put your OMDb key here
 
 // ---------------------
 // AUTOCOMPLETE FUNCTION
