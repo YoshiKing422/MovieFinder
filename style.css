@@ -1,0 +1,103 @@
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+.search-box button {
+  padding: 12px 18px;
+  background: #238636;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.results {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.movie {
+  background: #161b22;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #161b22;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+  color: white;
+}
+
+.suggestions {
+  background: #161b22;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 5px auto;
+  position: relative;
+  z-index: 10;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #1f2329;
+}
+
+.suggestion-item:hover {
+  background: #1f2933;
+}
